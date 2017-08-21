@@ -193,8 +193,8 @@
         {
             if (UserIsAuthenticated)
             {
-                var rightNow = DateTime.UtcNow;
-                var usersDate = LoggedOnReadOnlyUser.LastActivityDate ?? DateTime.UtcNow.AddDays(-1);
+                var rightNow = DateTime.Now;
+                var usersDate = LoggedOnReadOnlyUser.LastActivityDate ?? DateTime.Now.AddDays(-1);
 
                 var span = rightNow.Subtract(usersDate);
                 var totalMins = span.TotalMinutes;
@@ -207,7 +207,7 @@
                         var loggedOnUser = MembershipService.GetUser(Username);
 
                         // Update users last activity date so we can show the latest users online
-                        loggedOnUser.LastActivityDate = DateTime.UtcNow;
+                        loggedOnUser.LastActivityDate = DateTime.Now;
 
                         // Update
                         try
@@ -551,7 +551,7 @@
                     var myCookie = new HttpCookie(AppConstants.MemberEmailConfirmationCookieName)
                     {
                         Value = $"{userToSave.Email}#{userToSave.UserName}",
-                        Expires = DateTime.UtcNow.AddDays(7)
+                        Expires = DateTime.Now.AddDays(7)
                     };
                     // Add the cookie.
                     Response.Cookies.Add(myCookie);
@@ -608,7 +608,7 @@
                     {
                         var myCookie = new HttpCookie(AppConstants.MemberEmailConfirmationCookieName)
                         {
-                            Expires = DateTime.UtcNow.AddDays(-1)
+                            Expires = DateTime.Now.AddDays(-1)
                         };
                         Response.Cookies.Add(myCookie);
 
@@ -702,7 +702,7 @@
                                 if (user.IsApproved && !user.IsLockedOut && !user.IsBanned)
                                 {
                                     FormsAuthentication.SetAuthCookie(username, model.RememberMe);
-                                    user.LastLoginDate = DateTime.UtcNow;
+                                    user.LastLoginDate = DateTime.Now;
 
                                     if (Url.IsLocalUrl(model.ReturnUrl) && model.ReturnUrl.Length > 1 && model.ReturnUrl.StartsWith("/")
                                         && !model.ReturnUrl.StartsWith("//") && !model.ReturnUrl.StartsWith("/\\"))

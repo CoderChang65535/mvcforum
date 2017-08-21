@@ -381,7 +381,7 @@
                             var loggedOnUser = MembershipService.GetUser(LoggedOnReadOnlyUser.Id);
 
                             // Want the same edit date on both post and postedit
-                            var dateEdited = DateTime.UtcNow;
+                            var dateEdited = DateTime.Now;
 
                             // Create a post edit
                             var postEdit = new PostEdit
@@ -1100,7 +1100,7 @@
                     {
                         // Check the date the topic was created
                         var endDate = viewModel.Poll.Poll.DateCreated.AddDays((int)viewModel.Poll.Poll.ClosePollAfterDays);
-                        if (DateTime.UtcNow > endDate)
+                        if (DateTime.Now > endDate)
                         {
                             topic.Poll.IsClosed = true;
                             viewModel.Topic.Poll.IsClosed = true;
