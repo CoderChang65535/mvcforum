@@ -1,7 +1,5 @@
-##每天看一些代码，加一点汉化
+###每天看一些代码，加一点汉化
 
-
-![MVCForum](http://support.mvcforum.com/installer/content/images/logo.png)
 
 MVCForum - Fully Featured ASP.NET MVC 5 Forum
 ========
