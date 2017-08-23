@@ -7,7 +7,7 @@ Post.VoteDown,
 Badge.TheGrouch.Name,
 Favourites.PageTitle,我喜欢的内容
 Layout.Nav.Logon,
-Report.Admin,
+Report.Admin,管理员
 PM.AboutToExceedInboxSizeBody,
 PM.Block,
 LogOn.LogOn,
@@ -20,7 +20,7 @@ Badge.UnknownBadge,
 Layout.Nav.Register,
 Rss.Category.Description,
 Members.ResetPassword.EmailText,
-Layout.Nav.Admin,
+Layout.Nav.Admin,管理界面
 Layout.Nav.Utilities,
 PM.TalkToSelf,
 Members.ForgotPassword.SuccessMessage,
@@ -39,7 +39,7 @@ Topic.TitleFallBack,
 Members.Profile.Location,位置
 SubscribedTopics.NothingToShow,你没有关注任何话题
 Side.Search,搜索
-Members.Label.EmailAddress,
+Members.Label.EmailAddress,邮箱
 Members.MemberEmailAuthorisationNeededMessage,
 PM.ReceivedItemsOverCapcity,
 Post.Posts,
@@ -57,7 +57,7 @@ Report.PostReport,
 PM.Read,
 PM.SentItemsOverCapcity,
 Post.Notification.NewPosts,
-Members.DateJoined,
+Members.DateJoined,加入时间
 Topic.Views,浏览过
 Topic.Subscribe,关注
 Members.ChangePassword.Title,
@@ -111,7 +111,7 @@ Report.PostReported,
 Poll.Button.Vote,
 Post.VoteUp,
 Language.Changed,
-Ajax.PleaseWait,
+Ajax.PleaseWait,加载中
 Topic.CreateDiscussion,创建话题
 Members.Errors.InvalidEmail,
 PM.Title,
@@ -119,7 +119,7 @@ Post.Move.Description,
 PostFilter.Newest,
 TinyMCE.InsertImage.SelectFile,
 Topic.TagThisTopic,
-PM.ReceivedPrivateMessages,
+PM.ReceivedPrivateMessages,私信
 Members.NowLoggedOut,
 Badge.Photogenic.Name,
 Members.NowUnBanned,
@@ -133,7 +133,7 @@ Members.NowApproved,
 Members.Profile.Twitter,
 Members.NowRegistered,
 Topic.DiscussionTaggedWith,
-Members.EditProfile,
+Members.EditProfile,修改信息
 Post.VotedUp,
 Topic.ShowMorePostsLoading,
 Report.MemberReport,
@@ -149,18 +149,18 @@ Topic.IsPoll,
 Topic.LatestBy,最新
 Topic.Label.PollCloseAfterDays,
 Activity.Badge,
-Members.Label.Location,
+Members.Label.Location,位置
 Topic.Votes,
 Search.Searching,
 Report.ReportSent,
-Members.Label.ConfirmNewPassword,
+Members.Label.ConfirmNewPassword,确认新密码
 Date.HoursAgo,{0} 小时前
 Rss.Category.Title,{0} 个讨论
 Post.Edit,编辑
 Moderate.NothingHere,
 Member.ProfileUpdated,
-Members.Label.Password,
-Members.Label.UploadNewAvatar,
+Members.Label.Password,密码
+Members.Label.UploadNewAvatar,上传新头像
 Post.Deleted,
 Members.SuccessfulSrub,
 Badge.YourPostFavourited.Desc,
@@ -169,13 +169,13 @@ Members.BanUser,
 Members.ChangePassword.Error,
 Points.ThisWeeksHighEarners,
 Badges.PageTitle,
-Members.Label.Website,
+Members.Label.Website,网站
 Members.LogonFacebookButton,
 PM.Send,
 PM.Delete,
 Members.Errors.UserNotApproved,
 Topic.Label.UploadFiles,上传文件
-Post.Browse,
+Post.Browse,选择
 Topic.Label.Category,类别
 Leaderboard.ThisWeeksStars,
 Layout.PoweredBy,
@@ -190,7 +190,7 @@ Members.UnableToGetEmailAddress,
 Post.LastEdited,
 Members.Profile.Posts,发帖数
 Post.IsSolution,解决了？
-Buttons.Send,
+Buttons.Send,发送
 Site.MvcForum,
 Members.ForgotPassword.Title,
 Errors.NoPermission,
@@ -201,8 +201,8 @@ PM.ShowMoreLoading,
 Topic.Comment,
 Post.PostedThis,回复
 PostEdit.EditedVersion,
-LogOn.LogOff,
-Members.Label.Age,
+LogOn.LogOff,登出
+Members.Label.Age,年龄
 Poll.Button.Create,
 Topic.IsSticky,
 PostedIn.PageTitle,与你有关的话题和回复
@@ -211,7 +211,7 @@ Post.Delete,删除
 Members.Errors.InvalidPassword,
 Report.ReportPostBy,
 Date.DaysAgo,{0} 天前
-Buttons.Search,
+Buttons.Search,搜索
 Members.Profile.Joined,注册时间
 PM.Subject,
 Post.Upload,
@@ -222,7 +222,7 @@ Badge.PostMentionsUmbraco.Desc,
 Tags.PopularTags,标签.热门标签
 Badge.Padawan.Desc,
 Members.Errors.InvalidQuestion,
-PM.NoMessages,
+PM.NoMessages,没有私信
 Topic.Notification.Subject,
 Moderate.AwaitingModeration,
 Layout.CreateButton,创建话题
@@ -239,8 +239,8 @@ TinyMCE.InsertImage.ButtonClose,
 Post.LikedBy,
 Report.Report,
 PM.MemberIsOnline,
-Members.SearchMembers,
-Buttons.ChangePassword,
+Members.SearchMembers,搜索用户
+Buttons.ChangePassword,修改密码
 PM.PrivateMessages,
 PM.CreatePrivateMessage,
 Members.Profile.Age,年龄
@@ -253,12 +253,12 @@ Twitter.Error.EnabledButNotAddedKeys,
 Members.Profile.Facebook,
 PM.MessageSent,
 Stats.FooterMainStatText,我们 {0} 位成员 讨论 {1} 次 在 {2} 个讨论中
-Members.Label.NewPassword,
+Members.Label.NewPassword,新密码
 Badge.TheGrouch.Desc,
 Date.Yesterday,昨天
 Date.OneHourAgo,1小时前
 Post.UploadBannedFileExtension,
-Buttons.Continue,
+Buttons.Continue,继续
 PostEdit.None,
 Home.LatestDiscussions,
 PostFilter.Standard,
@@ -305,19 +305,19 @@ Members.MessageMe,
 Badge.OneThousandPoints.Desc,
 Badge.FavouriteFirstPost.Name,
 Badge.OneThousandPoints.Name,
-Buttons.ResetPassword,
+Buttons.ResetPassword,重置密码
 Home.Rss,
 Badge.MemberForAYear.Desc,
-Members.Points,
+Members.Points,积分
 Badge.YourPostFavourited.Name,
-Buttons.Save,
+Buttons.Save,保存
 TermsAndConditions.Label.Agree,
 Members.ForgotPassword.ErrorMessage,
 Topic.Notification.NewTopics,
-Members.Label.ConfirmPassword,
+Members.Label.ConfirmPassword,确认密码
 Following.PageTitle,
 Members.Label.Twitter,
-Buttons.LogOn,
+Buttons.LogOn,登录
 Members.ChangePassword.Link,
 Members.Errors.LogonGeneric,
 Post.UploadFileTooBig,
@@ -332,7 +332,7 @@ Post.Updated,
 Admin,管理员
 Post.Label.TopicName,
 Errors.NoPermissionPolls,
-Members.Label.Users,
+Members.Label.Users,用户
 Post.Attach,编辑
 Members.Label.Roles,
 Members.ForgotPassword.Link,
@@ -342,13 +342,13 @@ Post.Favourite,
 Moderate.NavText,
 Members.Errors.InvalidAnswer,
 Topic.Label.TopicTitle,标题
-Members.Label.DateJoined,
+Members.Label.DateJoined,加入时间
 Topic.OptionsHeading,
 Members.MemberEmailAuthorisation.EmailBody,
 Topic.IsLocked,
 PM.Sent,
 Members.ResetPassword.Text,
-Members.Admin,
+Members.Admin,管理员
 Members.Label.DisableEmailNotifications,
 Members.Errors.DuplicateUserName,
 Poll.Placeholder.TypeAnswerHere,
@@ -360,7 +360,7 @@ Members.Label.Facebook,
 Tasks.MarkAsSolutionReminderJob.Subject,
 Members.ResetPassword.Title,
 Badge.FavouriteFirstPost.Desc,
-Members.Users,
+Members.Users,用户名
 Errors.NoAccess,
 Post.label.TopicCategory,
 Members.Errors.DuplicateEmail,
@@ -378,7 +378,7 @@ Members.Errors.PasswordIncorrect,
 SlidePanel.CloseConfirmation,
 TinyMCE.InsertImage.ButtonTitle,
 Post.Report,
-Members.Label.Username,
+Members.Label.Username,用户名
 Post.OthersLiked,
 Activity.UserJoined,
 Badge.PosterMarkAsSolution.Desc,
@@ -389,7 +389,7 @@ Date.MinutesAgo,{0} 分钟前
 Members.ResetPassword.SuccessText,
 Badge.JediMaster.Desc,
 SideBox.MyTools,功能
-Buttons.Edit,
+Buttons.Edit,编辑信息
 TinyMCE.InsertImage.Browse,
 Members.Label.CurrentPassword,
 Buttons.Report,
