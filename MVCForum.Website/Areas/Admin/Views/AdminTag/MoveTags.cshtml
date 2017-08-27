@@ -1,6 +1,6 @@
 ﻿@model MVCForum.Website.Areas.Admin.ViewModels.MoveTagsViewModel
 @{
-    ViewBag.Title = "Change Tags";
+    ViewBag.Title = "修改标签";
 }
 
 <div class="panel">
@@ -10,7 +10,7 @@
         </h4>
     </div>
     <div class="panel-body">
-        <p>This page enables you to move topics from one tag to another, perfect if you want to delete a tag.</p>
+        <p>你可以把话题的标签从一个改为另一个, 或者删除一个标签</p>
 
         @using (Html.BeginForm("MoveTags", "AdminTag", FormMethod.Post))
         {
@@ -29,7 +29,7 @@
             </div>
 
             <div class="submit-holder">
-                <input type="submit" class="btn-mvc-green btn-mvc-large" value="Update" />
+                <input type="submit" class="btn-mvc-green btn-mvc-large" value="提交" />
             </div>
         }
 

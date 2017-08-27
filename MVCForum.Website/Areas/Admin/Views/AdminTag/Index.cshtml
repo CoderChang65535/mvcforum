@@ -2,7 +2,7 @@
 @model MVCForum.Website.Areas.Admin.ViewModels.ListTagsViewModel
 
 @{
-    ViewBag.Title = "Manage Tags";
+    ViewBag.Title = "管理标签";
 }
 
 <div class="panel">
@@ -16,7 +16,7 @@
             <div class="input-group tablesearch">
                 @Html.TextBoxFor(x => Model.Search, new { @class = "form-control" })
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">Search</button>
+                    <button class="btn btn-default" type="submit">搜索</button>
                 </span>
             </div>
         }

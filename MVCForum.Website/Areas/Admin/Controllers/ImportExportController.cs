@@ -76,7 +76,7 @@ namespace MVCForum.Website.Areas.Admin.Controllers
         {
             using (UnitOfWorkManager.NewUnitOfWork())
             {
-                return new CsvFileResult { FileDownloadName = "MVCForumUsers.csv", Body = MembershipService.ToCsv() };
+                return new CsvFileResult { FileDownloadName = "论坛用户.csv", Body = MembershipService.ToCsv() };
             }
         }
 
@@ -117,7 +117,7 @@ namespace MVCForum.Website.Areas.Admin.Controllers
                         report.Errors.Add(new CsvErrorWarning
                         {
                             ErrorWarningType = CsvErrorWarningType.BadDataFormat,
-                            Message = "File does not contain any users."
+                            Message = "文件中不含有任何用户."
                         });
                     }
                 }
@@ -127,7 +127,7 @@ namespace MVCForum.Website.Areas.Admin.Controllers
                     report.Errors.Add(new CsvErrorWarning
                     {
                         ErrorWarningType = CsvErrorWarningType.GeneralError,
-                        Message = string.Format("Unable to import users: {0}", ex.Message)
+                        Message = string.Format("无法导入用户：{0}", ex.Message)
                     });
                 }
 

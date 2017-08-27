@@ -34,7 +34,7 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         public Guid Id { get; set; }
 
         [Required]
-        [Display(Name = "User Name")]        
+        [Display(Name = "用户名")]        
         public string UserName { get; set; }
 
         [Display(Name = "Locked Out")]
@@ -43,18 +43,18 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         [Display(Name = "Approved")]
         public bool IsApproved { get; set; }
 
-        [Display(Name = "Roles")]
+        [Display(Name = "用户类型")]
         public string[] Roles { get; set; }
     }
 
     public class MemberListViewModel
     {
         [Required]
-        [Display(Name = "Users")]
+        [Display(Name = "用户名")]
         public IList<SingleMemberListViewModel> Users { get; set; }
 
         [Required]
-        [Display(Name = "Roles")]
+        [Display(Name = "用户类型")]
         public IList<MembershipRole> AllRoles { get; set; }
 
         public Guid Id { get; set; }
@@ -180,7 +180,7 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         public Guid Id { get; set; }
 
         [Required]
-        [Display(Name = "Role Name")]
+        [Display(Name = "用户类型")]
         public string RoleName { get; set; }
 
     }

@@ -25,123 +25,123 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         [HiddenInput]
         public Guid Id { get; set; }
 
-        [DisplayName("Forum Name")]
+        [DisplayName("论坛名")]
         [Required]
         [StringLength(200)]
         public string ForumName { get; set; }
 
-        [DisplayName("Forum Url")]
+        [DisplayName("论坛网址")]
         [Required]
         [StringLength(200)]
         public string ForumUrl { get; set; }
 
-        [DisplayName("Close Forum")]
-        [Description("Close the forum for maintenance")]
+        [DisplayName("关闭论坛")]
+        [Description("关闭论坛并维护")]
         public bool IsClosed { get; set; }
 
         [DisplayName("Allow Rss Feeds")]
         [Description("Show the RSS feed icons for the Topics and Categories")]        
         public bool EnableRSSFeeds { get; set; }
 
-        [DisplayName("Show Edited By Details On Posts")]
+        [DisplayName("显示在帖子上的详细信息编辑")]
         public bool DisplayEditedBy { get; set; }
 
         //[DisplayName("Allow File Attachments On Posts")]
         //public bool EnablePostFileAttachments { get; set; }
 
-        [DisplayName("Allow Posts To Be Marked As Solution")]
+        [DisplayName("允许帖子被标记为解决")]
         public bool EnableMarkAsSolution { get; set; }
 
-        [DisplayName("Timeframe in days to wait before a reminder email is sent to topic creator, for all topics that have not been marked as solution - Set to 0 to disable")]
+        [DisplayName("所有未被标记为解决方案的主题电子邮件提醒，等待的时间范围， - 设置为0以禁用")]
         public int MarkAsSolutionReminderTimeFrame { get; set; }
 
         [DisplayName("Enable Spam Reporting")]
         public bool EnableSpamReporting { get; set; }
 
-        [DisplayName("Enable Emoticons (Smilies)")]
+        [DisplayName("启用表情")]
         public bool EnableEmoticons { get; set; }
 
         [DisplayName("Allow Members To Report Other Members")]
         public bool EnableMemberReporting { get; set; }
 
-        [DisplayName("Allow Email Subscriptions")]
+        [DisplayName("允许电子邮件订阅")]
         public bool EnableEmailSubscriptions { get; set; }
 
         [DisplayName("New Members Must Confirm Their Account Via A Link Sent In An Email - Will not work with Twitter accounts!")]
         public bool NewMemberEmailConfirmation { get; set; }
 
-        [DisplayName("Manually Authorise New Members")]
+        [DisplayName("手动授权新会员")]
         public bool ManuallyAuthoriseNewMembers { get; set; }
 
-        [DisplayName("Email Admin On New Member Signup")]
+        [DisplayName("新用户注册通知管理员")]
         public bool EmailAdminOnNewMemberSignUp { get; set; }
 
-        [DisplayName("Number Of Topics Per Page")]
+        [DisplayName("每页话题数量")]
         public int TopicsPerPage { get; set; }
 
-        [DisplayName("Number Of Posts Per Page")]
+        [DisplayName("每页帖子数量")]
         public int PostsPerPage { get; set; }
 
-        [DisplayName("Number Of Activities Per Page")]
+        [DisplayName("每页活动数量")]
         public int ActivitiesPerPage { get; set; }
 
-        [DisplayName("Allow Private Messages")]
+        [DisplayName("允许私信")]
         public bool EnablePrivateMessages { get; set; }
 
-        [DisplayName("Private Message Inbox Max Size")]
+        [DisplayName("私信最大数量")]
         public int MaxPrivateMessagesPerMember { get; set; }
 
-        [DisplayName("Private Message Flood Control - Time In Seconds a user must wait before being allowed to message another user")]
+        [DisplayName("私信保护 - 每多少秒允许发送私信")]
         public int PrivateMessageFloodControl { get; set; }
 
-        [DisplayName("Allow Member Signatures")]
+        [DisplayName("允许用户使用签名")]
         public bool EnableSignatures { get; set; }
 
         [DisplayName("Enable Members To Create Polls")]
         public bool EnablePolls { get; set; }
 
-        [DisplayName("Allow Points")]
+        [DisplayName("允许积分系统")]
         public bool EnablePoints { get; set; }
 
-        [DisplayName("Amount Of Points Before A User Can Vote")]
+        [DisplayName("投票所需积分")]
         public int PointsAllowedToVoteAmount { get; set; }
 
-        [DisplayName("Amount Of Points For Extended Profile")]
+        [DisplayName("修改用户信息所需积分")]
         public int PointsAllowedForExtendedProfile { get; set; }
 
-        [DisplayName("Points Added Per New Post")]
+        [DisplayName("发帖获得积分")]
         public int PointsAddedPerPost { get; set; }
 
-        [DisplayName("Points Added For Positive Vote")]
+        [DisplayName("积极投票获得积分")]
         public int PointsAddedPostiveVote { get; set; }
 
-        [DisplayName("Points Deducted For Negative Vote")]
+        [DisplayName("消极投票扣除积分")]
         public int PointsDeductedNagativeVote { get; set; }
 
-        [DisplayName("Points Added For A Solution")]
+        [DisplayName("解决问题的积分")]
         public int PointsAddedForSolution { get; set; }
 
         [EmailAddress]
-        [DisplayName("Admin Email Address")]
+        [DisplayName("管理员邮箱")]
         public string AdminEmailAddress { get; set; }
 
-        [DisplayName("Notification Reply Email Address")]
+        [DisplayName("通知回复的邮箱")]
         [AllowHtml] // We have to put this to allow this type of reply address MVCForum <noreply@mvcforum.com>
         public string NotificationReplyEmail { get; set; }
 
-        [DisplayName("SMTP Server")]
+        [DisplayName("SMTP 服务器")]
         public string SMTP { get; set; }
 
-        [DisplayName("SMTP Server Username")]
+        [DisplayName("SMTP 服务器用户名")]
         public string SMTPUsername { get; set; }
 
-        [DisplayName("SMTP Server Password")]
+        [DisplayName("SMTP 服务器密码")]
         public string SMTPPassword { get; set; }
 
-        [DisplayName("Optional: SMTP Port")]
+        [DisplayName("SMTP端口")]
         public int? SMTPPort { get; set; }
 
-        [DisplayName("SMTP SSL - Enable SSL for sending via gmail etc...")]
+        [DisplayName("SMTP SSL - 通过SSL发送邮件")]
         public bool SMTPEnableSSL { get; set; }
 
         [DisplayName("Current Theme")]
@@ -189,7 +189,7 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         [MaxLength(200)]
         public string MetaDesc { get; set; }
 
-        [DisplayName("Disable Dislike Button - Users can only Like posts")]
+        [DisplayName("禁用不喜欢按钮 - 用户只能喜欢帖子")]
         public bool DisableDislikeButton { get; set; }
 
         [DisplayName("New Members must agree to the Terms & Conditions below before using the forum")]        

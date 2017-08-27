@@ -1,19 +1,19 @@
 ﻿@{
-    ViewBag.Title = "Import / Export Members";
+    ViewBag.Title = "导入/导出成员";
 }
 
 <div class="row">
     <div class="col-md-6">
         <div class="panel">
             <div class="panel-heading">
-                <h5>Export Members</h5>
+                <h5>导出用户</h5>
             </div>
             <div class="panel-body">
-                <p>Export all members into a CSV, you can use this CSV format to also import members into the forum.</p>
+                <p>把所有用户导出为CSV格式</p>
                 @using (Html.BeginForm("ExportUsers", "ImportExport"))
                 {
                     <div class="submit-holder">
-                        <button type="submit" class="btn-mvc-green">Export</button>
+                        <button type="submit" class="btn-mvc-green">导出</button>
                     </div>
                 }
             </div>
@@ -22,15 +22,15 @@
     <div class="col-md-6">
         <div class="panel">
             <div class="panel-heading">
-                <h5>Import Members</h5>
+                <h5>导入用户</h5>
             </div>
             <div class="panel-content">
-                <p>The easiest way to find out what format the CSV file to import should be in, is to click the export button above and use that as a template.</p>
+                <p>导入用户，可以从导出功能中获得模版</p>
                 @using (Html.BeginForm("ImportUsers", "ImportExport", FormMethod.Post, new { enctype = "multipart/form-data", id = "ImportForm", name = "ImportForm", target = "UploadTarget" }))
                 {
                     <div class="submit-holder">
                         <p><input type="file" id="file" name="file" /></p>
-                        <p><input type="submit" class="btn-mvc-green" value="Import" /></p>
+                        <p><input type="submit" class="btn-mvc-green" value="导入" /></p>
                     </div>
                 }
 

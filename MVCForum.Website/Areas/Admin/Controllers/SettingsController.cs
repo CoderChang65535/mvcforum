@@ -86,7 +86,7 @@ namespace MVCForum.Website.Areas.Admin.Controllers
                 {
                     TempData[AppConstants.MessageViewBagName] = new GenericMessageViewModel
                     {
-                        Message = "Settings Updated",
+                        Message = "设置保存",
                         MessageType = GenericMessages.success
                     };
                     settingsViewModel.Themes = AppHelpers.GetThemeFolders();

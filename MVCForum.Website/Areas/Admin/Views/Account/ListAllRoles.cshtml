@@ -2,7 +2,7 @@
 @model MVCForum.Website.Areas.Admin.ViewModels.RoleListViewModel
 
 @{
-    ViewBag.Title = "All Roles";
+    ViewBag.Title = "所有用户类型";
 }
 
 <div class="panel">
@@ -10,15 +10,15 @@
         <h5>@ViewBag.Title</h5>
     </div>
     <div class="panel-content">
-        <p><label class="label label-danger">Important</label> You must remove all users from a role before you can delete it</p>
+        <p><label class="label label-danger">重要</label> 在删除一个类型之前必须先移出这个类型的所有成员</p>
 
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>Edit</th>
-                    <th>Role</th>
-                    <th>Users In Role</th>
-                    <th>Delete</th>
+                    <th>修改名称</th>
+                    <th>类型</th>
+                    <th>用户数量</th>
+                    <th>删除</th>
                 </tr>
             </thead>
             <tbody>

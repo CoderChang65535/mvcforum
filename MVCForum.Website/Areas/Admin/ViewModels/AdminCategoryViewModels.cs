@@ -20,21 +20,21 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         [HiddenInput]
         public Guid Id { get; set; }
 
-        [DisplayName("Category Name")]
+        [DisplayName("板块名")]
         [Required]
         [StringLength(600)]
         public string Name { get; set; }
 
-        [DisplayName("Category Description")]
+        [DisplayName("板块描述")]
         [DataType(DataType.MultilineText)]
         [UIHint(AppConstants.EditorType), AllowHtml]
         public string Description { get; set; }
 
-        [DisplayName("Category Colour")]
+        [DisplayName("颜色")]
         [UIHint(AppConstants.EditorTemplateColourPicker), AllowHtml]
         public string CategoryColour { get; set; }
 
-        [DisplayName("Lock The Category")]
+        [DisplayName("锁定板块")]
         public bool IsLocked { get; set; }
 
         [DisplayName("Moderate all topics in this Category")]
@@ -43,11 +43,11 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         [DisplayName("Moderate all posts in this Category")]
         public bool ModeratePosts { get; set; }
 
-        [DisplayName("Sort Order")]
+        [DisplayName("排序顺序")]
         [Range(0, int.MaxValue)]
         public int SortOrder { get; set; }
 
-        [DisplayName("Parent Category")]
+        [DisplayName("父板块")]
         public Guid? ParentCategory { get; set; }
 
         public List<SelectListItem> AllCategories { get; set; }
@@ -60,7 +60,7 @@ namespace MVCForum.Website.Areas.Admin.ViewModels
         [MaxLength(200)]
         public string MetaDesc { get; set; }
 
-        [DisplayName("Category Image")]
+        [DisplayName("板块图标")]
         public HttpPostedFileBase[] Files { get; set; }
         public string Image { get; set; }
     }
